@@ -28,7 +28,7 @@ const Projects = () => {
         <ProjectCard
           title="Portfolio Website"
           main="✅ Frontend Development – Creating beautiful, responsive, and interactive UI with React.js, Tailwind CSS."
-          githubLink="https://github.com/yourusername/portfolio"
+          githubLink="https://github.com/pushkarpawar01/portfolio"
         />
         <ProjectCard
           title="Netflix Clone"
