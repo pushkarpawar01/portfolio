@@ -31,14 +31,14 @@ const Projects = () => {
           githubLink="https://github.com/pushkarpawar01/portfolio"
         />
         <ProjectCard
-          title="Netflix Clone"
-          main="✅ Frontend Development – Creating beautiful, responsive, and interactive UI with React.js, Tailwind CSS."
-          githubLink="https://github.com/pushkarpawar01/netflix-clone2"
+          title="AI Powered Quiz Application"
+          main="✅ Developed an AI powered quiz application which generates questions based on the topic entered by the user. Integrated Sambanova API for generation of questions."
+          githubLink="https://github.com/pushkarpawar01/quizApplication"
         />
         <ProjectCard
-          title="Razorpay Clone"
-          main="✅ Frontend Development – Creating beautiful, responsive, and interactive UI with React.js, Tailwind CSS."
-          githubLink="https://github.com/pushkarpawar01/razorpayclone"
+          title="Waste2Worth"
+          main="✅ Developed a web based platform for managing the surplus food.This platform is designed to connect the surplus food sources with the NGOs.Integrated the Razorpay payment gateway for donation of money to NGOs."
+          githubLink="https://github.com/pushkarpawar01/donate1"
         />
       </motion.div>
     </motion.div>

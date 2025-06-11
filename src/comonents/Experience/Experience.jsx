@@ -4,35 +4,47 @@ import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 const Experience = () => {
   return (
     <div>
-      <div id="Experience" className="p-10 md:p-24">
-      <h1 className="text-2xl md:text-4xl text-white font-bold text-center">Experience</h1>
-      <div className="flex flex-wrap items-center justify-around">
-        <div className="flex flex-wrap md:w-2/5 gap-8 md:p-12 py-10">
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaHtml5 color="#E34F26" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaCss3 color="#1572B6" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaReact color="#61DAFB" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaJs color="#F7DF1E" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaFigma color="#F24E1E" size={50} />
-          </span>
-        </div>
-        <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            <p className='text-2xl leading-tight font-bold text-white'>
-                Member of PICT CSI Student Branch. <br />
-                Since January 2024 - Present
-            </p>
+      <div id="Experience" className="p-10 md:p-24 text-white">
+        {/* Education Section */}  
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-xl md:text-3xl font-bold mb-6">Education</h1>
+          <div className="relative border-l-2 border-yellow-500 pl-6">
+            {/* Timeline item 1 */}
+            <div className="mb-8 ml-4 relative">
+              <h3 className="font-semibold text-lg">Pune Institute Of Computer Technology</h3>
+              <p className="text-yellow-400 font-semibold">2023– Present</p>
+              <p>BE in Computer Engineering</p>
+            </div>
+            {/* Timeline item 2 */}
+            <div className="mb-8 ml-4 relative">
+              <h3 className="font-semibold text-lg">Gurudev Junior College of Science</h3>
+              <p className="text-yellow-400 font-semibold">2020– 2022</p>
+              <p>Higher Secondary Certificate (HSC)</p>
+            </div>
+            {/* Timeline item 3 */}
+            <div className="mb-8 ml-4 relative">
+              <h3 className="font-semibold text-lg">Carmel Convent English Medium High School</h3>
+              <p className="text-yellow-400 font-semibold">2009– 2020</p>
+              <p>Secondary School Certificate (SSC)</p>
+            </div>
           </div>
-       </div>
+        </div>
+
+        {/* Skills Section */}
+        <div className="max-w-3xl mx-auto mt-16">
+          <h1 className="text-xl md:text-3xl font-bold mb-6">Skills</h1>
+          <div className="flex flex-wrap gap-3">
+            {[
+              "React", "Next.js", "Node.js", "Python","C++", "MongoDB", "HTML5", "CSS3", "JavaScript", "NodeJS", "Express", "Postman", "GitHub", "NumPy", "Pandas"
+            ].map((skill, index) => (
+              <span key={index} className="bg-white text-black rounded-full px-4 py-1 text-sm font-semibold">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
-      </div>
+    </div>
   )
 }
 
